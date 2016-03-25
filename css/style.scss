@@ -1,0 +1,137 @@
+// Fonts
+
+@import url(https://fonts.googleapis.com/css?family=Oswald|Arimo);
+
+$oswald: 'Oswald', sans-serif;
+$arimo: 'Arimo', sans-serif;
+
+//Colors
+
+$dark-blue: #100828;
+$lighter-blue: #281D57;
+$lightest-blue: #38297A;
+$white: #fff;
+$spacial-grey: #F5E9FA;
+
+
+// General Styles
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $arimo;
+    font-size: 16px;
+    color: $spacial-grey;
+    background: url('../img/space-bg-2.jpg') no-repeat scroll 0 0 transparent;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $oswald;
+}
+
+/*Header*/
+
+.navbar-universe {
+    background-color: $dark-blue;
+    border-color: $dark-blue;
+    padding: 1.5rem 0;
+
+    .navbar-header {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center; /* Safari 6.1+ */
+        justify-content: center;
+
+        .navbar-brand {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center; /* Safari 6.1+ */
+            justify-content: center;
+
+            h1 {
+                color: $spacial-grey !important;
+                font-size: 1.6em;
+                margin: 0 0 0 1rem;
+            }
+        }
+    }
+}
+
+
+/*Hambuger menu in all screen-sizes*/
+@media (max-width: 2500px) {
+  .custom-navbar .navbar-header {
+    float: none;
+  }
+
+  .custom-navbar .navbar-left,
+  .custom-navbar .navbar-right {
+    float: none !important;
+  }
+
+  .custom-navbar {
+      .navbar-toggle {
+        display: block;
+        margin: 0;
+      }
+
+      &.navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+      }
+
+      .navbar-collapse.collapse {
+          display: none!important;
+      }
+
+      .navbar-nav {
+        float: right;
+        margin-top: 7.5px;
+        text-align: right;
+
+            li {
+              float: none;
+                  >a {
+                        color: $white;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+
+                        &:hover,
+                        &:focus {
+                            background-color: $lightest-blue;
+                        }
+                  }
+            }
+      }
+
+      .collapse.in {
+        display: block !important;
+        float: right;
+        width: 100%;
+      }
+
+      .custom-navbar .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+  }
+
+
+
+}

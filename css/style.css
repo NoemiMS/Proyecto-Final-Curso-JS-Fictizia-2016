@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Arimo);
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  color: #F5E9FA;
+  background: url("../img/space-bg-2.jpg") no-repeat scroll 0 0 transparent;
+  background-size: cover; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif; }
+
+/*Header*/
+.navbar-universe {
+  background-color: #100828;
+  border-color: #100828;
+  padding: 1.5rem 0; }
+  .navbar-universe .navbar-header {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    /* Safari 6.1+ */
+    justify-content: center; }
+    .navbar-universe .navbar-header .navbar-brand {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      /* Safari 6.1+ */
+      justify-content: center; }
+      .navbar-universe .navbar-header .navbar-brand h1 {
+        color: #F5E9FA !important;
+        font-size: 1.6em;
+        margin: 0 0 0 1rem; }
+
+/*Hambuger menu in all screen-sizes*/
+@media (max-width: 2500px) {
+  .custom-navbar .navbar-header {
+    float: none; }
+
+  .custom-navbar .navbar-left,
+  .custom-navbar .navbar-right {
+    float: none !important; }
+
+  .custom-navbar .navbar-toggle {
+    display: block;
+    margin: 0; }
+  .custom-navbar.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+  .custom-navbar .navbar-collapse.collapse {
+    display: none !important; }
+  .custom-navbar .navbar-nav {
+    float: right;
+    margin-top: 7.5px;
+    text-align: right; }
+    .custom-navbar .navbar-nav li {
+      float: none; }
+      .custom-navbar .navbar-nav li > a {
+        color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        .custom-navbar .navbar-nav li > a:hover, .custom-navbar .navbar-nav li > a:focus {
+          background-color: #38297A; }
+  .custom-navbar .collapse.in {
+    display: block !important;
+    float: right;
+    width: 100%; }
+  .custom-navbar .custom-navbar .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; } }
