@@ -1,22 +1,31 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald|Arimo);
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway);
 * {
   margin: 0;
   padding: 0; }
 
+html {
+  height: 100%; }
+
 body {
-  font-family: "Arimo", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: #F5E9FA;
   background: url("../img/space-bg-2.jpg") no-repeat scroll 0 0 transparent;
-  background-size: cover; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Oswald", sans-serif; }
+  background-size: cover;
+  min-height: 100%;
+  position: relative; }
+  body a {
+    color: #fff;
+    text-decoration: underline; }
+    body a:hover {
+      color: #38297A; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    font-family: "Gloria Hallelujah", cursive; }
 
 /*Header*/
 .navbar-universe {
@@ -26,6 +35,8 @@ h6 {
   .navbar-universe .navbar-header {
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
+    align-items: center;
     -webkit-justify-content: center;
     /* Safari 6.1+ */
     justify-content: center; }
@@ -84,3 +95,43 @@ h6 {
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none; } }
+#main .wrapper-main {
+  background-color: #100828;
+  padding: 5rem;
+  margin-bottom: 10rem; }
+  #main .wrapper-main #photos-nasa {
+    text-align: center; }
+    #main .wrapper-main #photos-nasa h2 {
+      border-bottom: 8px double #fff;
+      color: #fff;
+      display: inline-block; }
+    #main .wrapper-main #photos-nasa .photo-circle img {
+      margin: 0 auto;
+      max-height: 300px; }
+  #main .wrapper-main #things-around-earth {
+    margin-top: 6rem; }
+    #main .wrapper-main #things-around-earth .row {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      /* Safari 6.1+ */
+      justify-content: center; }
+  #main .wrapper-main span {
+    font-style: italic; }
+  #main .wrapper-main .list-api {
+    padding-left: 3.5rem; }
+  #main .wrapper-main .social-network li {
+    display: inline-block;
+    font-size: 5rem;
+    padding: 0 1rem; }
+
+footer {
+  background-color: #100828;
+  bottom: 0;
+  color: #fff;
+  padding: 3rem 0;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
