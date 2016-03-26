@@ -39,7 +39,7 @@ body {
     font-family: $raleway;
     font-size: 16px;
     color: $spacial-grey;
-    background: url('../img/space-bg-2.jpg') no-repeat scroll 0 0 transparent;
+    background: url('../img/space-bg-2.jpg') repeat-y scroll 0 0 transparent;
     background-size: cover;
     min-height: 100%;
     position:relative;
@@ -83,83 +83,83 @@ body {
             }
         }
     }
+
+    .navbar-nav {
+        float: right;
+        li {
+              >a {
+                    color: $white;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    text-decoration: none;
+
+                    &:hover,
+                    &:focus {
+                        background-color: transparent;
+                        text-decoration: underline;
+                    }
+              }
+        }
+    }
 }
 
 
 /*Hambuger menu in all screen-sizes*/
-@media (max-width: 2500px) {
-  .custom-navbar .navbar-header {
-    float: none;
-  }
-
-  .custom-navbar .navbar-left,
-  .custom-navbar .navbar-right {
-    float: none !important;
-  }
-
-  .custom-navbar {
-      .navbar-toggle {
-        display: block;
-        margin: 0;
-      }
-
-      &.navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-      }
-
-      .navbar-collapse.collapse {
-          display: none!important;
-      }
-
-      .navbar-nav {
-        float: right;
-        margin-top: 7.5px;
-        text-align: right;
-
-            li {
-              float: none;
-                  >a {
-                        color: $white;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-
-                        &:hover,
-                        &:focus {
-                            background-color: $lightest-blue;
-                        }
-                  }
-            }
-      }
-
-      .collapse.in {
-        display: block !important;
-        float: right;
-        width: 100%;
-      }
-
-      .custom-navbar .navbar-nav .open .dropdown-menu {
-        position: static;
-        float: none;
-        width: auto;
-        margin-top: 0;
-        background-color: transparent;
-        border: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-      }
-  }
-
-}
+// @media (max-width: 2500px) {
+//   .custom-navbar .navbar-header {
+//     float: none;
+//   }
+//
+//   .custom-navbar .navbar-left,
+//   .custom-navbar .navbar-right {
+//     float: none !important;
+//   }
+//
+//   .custom-navbar {
+//       .navbar-toggle {
+//         display: block;
+//         margin: 0;
+//       }
+//
+//       &.navbar-fixed-top {
+//         top: 0;
+//         border-width: 0 0 1px;
+//       }
+//
+//       .navbar-collapse.collapse {
+//           display: none!important;
+//       }
+//
+//
+//
+//       .collapse.in {
+//         display: block !important;
+//         float: right;
+//         width: 100%;
+//       }
+//
+//       .custom-navbar .navbar-nav .open .dropdown-menu {
+//         position: static;
+//         float: none;
+//         width: auto;
+//         margin-top: 0;
+//         background-color: transparent;
+//         border: 0;
+//         -webkit-box-shadow: none;
+//         box-shadow: none;
+//       }
+//   }
+//
+// }
 
 
 
 
 #main {
+    padding-bottom: 200px;
     .wrapper-main {
         background-color: $dark-blue;
         padding: 5rem;
-        margin-bottom: 10rem;
 
         #photos-nasa {
             text-align:center;

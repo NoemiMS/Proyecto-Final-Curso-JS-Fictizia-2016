@@ -10,7 +10,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: #F5E9FA;
-  background: url("../img/space-bg-2.jpg") no-repeat scroll 0 0 transparent;
+  background: url("../img/space-bg-2.jpg") repeat-y scroll 0 0 transparent;
   background-size: cover;
   min-height: 100%;
   position: relative; }
@@ -52,80 +52,50 @@ body {
         color: #F5E9FA !important;
         font-size: 1.6em;
         margin: 0 0 0 1rem; }
+  .navbar-universe .navbar-nav {
+    float: right; }
+    .navbar-universe .navbar-nav li > a {
+      color: #fff;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-decoration: none; }
+      .navbar-universe .navbar-nav li > a:hover, .navbar-universe .navbar-nav li > a:focus {
+        background-color: transparent;
+        text-decoration: underline; }
 
 /*Hambuger menu in all screen-sizes*/
-@media (max-width: 2500px) {
-  .custom-navbar .navbar-header {
-    float: none; }
-
-  .custom-navbar .navbar-left,
-  .custom-navbar .navbar-right {
-    float: none !important; }
-
-  .custom-navbar .navbar-toggle {
-    display: block;
-    margin: 0; }
-  .custom-navbar.navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px; }
-  .custom-navbar .navbar-collapse.collapse {
-    display: none !important; }
-  .custom-navbar .navbar-nav {
-    float: right;
-    margin-top: 7.5px;
-    text-align: right; }
-    .custom-navbar .navbar-nav li {
-      float: none; }
-      .custom-navbar .navbar-nav li > a {
+#main {
+  padding-bottom: 200px; }
+  #main .wrapper-main {
+    background-color: #100828;
+    padding: 5rem; }
+    #main .wrapper-main #photos-nasa {
+      text-align: center; }
+      #main .wrapper-main #photos-nasa h2 {
+        border-bottom: 8px double #fff;
         color: #fff;
-        padding-top: 10px;
-        padding-bottom: 10px; }
-        .custom-navbar .navbar-nav li > a:hover, .custom-navbar .navbar-nav li > a:focus {
-          background-color: #38297A; }
-  .custom-navbar .collapse.in {
-    display: block !important;
-    float: right;
-    width: 100%; }
-  .custom-navbar .custom-navbar .navbar-nav .open .dropdown-menu {
-    position: static;
-    float: none;
-    width: auto;
-    margin-top: 0;
-    background-color: transparent;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none; } }
-#main .wrapper-main {
-  background-color: #100828;
-  padding: 5rem;
-  margin-bottom: 10rem; }
-  #main .wrapper-main #photos-nasa {
-    text-align: center; }
-    #main .wrapper-main #photos-nasa h2 {
-      border-bottom: 8px double #fff;
-      color: #fff;
-      display: inline-block; }
-    #main .wrapper-main #photos-nasa .photo-circle img {
-      margin: 0 auto;
-      max-height: 300px; }
-  #main .wrapper-main #things-around-earth {
-    margin-top: 6rem; }
-    #main .wrapper-main #things-around-earth .row {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-      align-items: center;
-      -webkit-justify-content: center;
-      /* Safari 6.1+ */
-      justify-content: center; }
-  #main .wrapper-main span {
-    font-style: italic; }
-  #main .wrapper-main .list-api {
-    padding-left: 3.5rem; }
-  #main .wrapper-main .social-network li {
-    display: inline-block;
-    font-size: 5rem;
-    padding: 0 1rem; }
+        display: inline-block; }
+      #main .wrapper-main #photos-nasa .photo-circle img {
+        margin: 0 auto;
+        max-height: 300px; }
+    #main .wrapper-main #things-around-earth {
+      margin-top: 6rem; }
+      #main .wrapper-main #things-around-earth .row {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        /* Safari 6.1+ */
+        justify-content: center; }
+    #main .wrapper-main span {
+      font-style: italic; }
+    #main .wrapper-main .list-api {
+      padding-left: 3.5rem; }
+    #main .wrapper-main .social-network li {
+      display: inline-block;
+      font-size: 5rem;
+      padding: 0 1rem; }
 
 footer {
   background-color: #100828;
