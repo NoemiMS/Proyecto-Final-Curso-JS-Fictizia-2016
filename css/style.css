@@ -9,16 +9,15 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  color: #F5E9FA;
-  background: url("../img/space-bg-2.jpg") repeat-y scroll 0 0 transparent;
-  background-size: cover;
+  color: #7591A3;
+  background: #fff;
   min-height: 100%;
   position: relative; }
   body a {
-    color: #fff;
+    color: #C1E3E2;
     text-decoration: underline; }
     body a:hover {
-      color: #38297A; }
+      color: #7591A3; }
   body h1,
   body h2,
   body h3,
@@ -27,81 +26,73 @@ body {
   body h6 {
     font-family: "Gloria Hallelujah", cursive; }
 
-/*Header*/
-.navbar-universe {
-  background-color: #100828;
-  border-color: #100828;
-  padding: 1.5rem 0; }
-  .navbar-universe .navbar-header {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    /* Safari 6.1+ */
-    justify-content: center; }
-    .navbar-universe .navbar-header .navbar-brand {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-      align-items: center;
-      -webkit-justify-content: center;
-      /* Safari 6.1+ */
-      justify-content: center; }
-      .navbar-universe .navbar-header .navbar-brand h1 {
-        color: #F5E9FA !important;
-        font-size: 1.6em;
-        margin: 0 0 0 1rem; }
-  .navbar-universe .navbar-nav {
-    float: right; }
-    .navbar-universe .navbar-nav li > a {
-      color: #fff;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      text-decoration: none; }
-      .navbar-universe .navbar-nav li > a:hover, .navbar-universe .navbar-nav li > a:focus {
-        background-color: transparent;
-        text-decoration: underline; }
+header {
+  background-color: #9FB8B9;
+  color: #C1E3E2;
+  padding: 1em;
+  text-align: center; }
+  header h1 {
+    margin: 0; }
 
-/*Hambuger menu in all screen-sizes*/
-#main {
-  padding-bottom: 200px; }
-  #main .wrapper-main {
-    background-color: #100828;
-    padding: 5rem; }
-    #main .wrapper-main #photos-nasa {
-      text-align: center; }
-      #main .wrapper-main #photos-nasa h2 {
-        border-bottom: 8px double #fff;
-        color: #fff;
-        display: inline-block; }
-      #main .wrapper-main #photos-nasa .photo-circle img {
-        margin: 0 auto;
-        max-height: 300px; }
-    #main .wrapper-main #things-around-earth {
-      margin-top: 6rem; }
-      #main .wrapper-main #things-around-earth .row {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items: center;
-        align-items: center;
-        -webkit-justify-content: center;
-        /* Safari 6.1+ */
-        justify-content: center; }
-    #main .wrapper-main span {
-      font-style: italic; }
-    #main .wrapper-main .list-api {
-      padding-left: 3.5rem; }
-    #main .wrapper-main .social-network li {
-      display: inline-block;
-      font-size: 5rem;
-      padding: 0 1rem; }
+#main .intro {
+  background: url("../img/background.png") repeat scroll 0 0 transparent;
+  -webkit-animation: animatedBackground 200s 0s linear infinite;
+  -moz-animation: animatedBackground 200s 0s linear infinite;
+  animation: animatedBackground 200s 0s linear infinite;
+  padding: 5em 0; }
+  #main .intro .list-api li {
+    list-style-position: inside; }
+#main #photos-nasa {
+  background: url("../img/background.png") repeat scroll 0 0 transparent;
+  -webkit-animation: animatedBackground 200s 0s linear infinite;
+  -moz-animation: animatedBackground 200s 0s linear infinite;
+  animation: animatedBackground 200s 0s linear infinite;
+  padding: 5em;
+  text-align: left; }
+  #main #photos-nasa .info-photo-nasa {
+    background-color: #fff;
+    padding: 3em;
+    z-index: 10; }
+  #main #photos-nasa .photo-nasa {
+    background-color: #fff;
+    margin-top: -7em;
+    padding: .5em;
+    z-index: 0; }
+    #main #photos-nasa .photo-nasa img {
+      width: 100%; }
+#main #mars-content {
+  background: url("../img/bg-mars.png") repeat scroll 0 0 #000;
+  padding: 5em 5em 11em;
+  text-align: center; }
+  #main #mars-content .photo-wrapper {
+    position: relative; }
+    #main #mars-content .photo-wrapper img {
+      width: 100%; }
+    #main #mars-content .photo-wrapper .caption-photo-mars {
+      background-color: rgba(255, 255, 255, 0.9);
+      margin-top: -4em;
+      padding: 1.5em 2em;
+      text-align: right; }
 
+@keyframes animatedBackground {
+  from {
+    background-position: 5% 5%; }
+  to {
+    background-position: 1300% 600%; } }
 footer {
-  background-color: #100828;
+  background-color: #9FB8B9;
   bottom: 0;
-  color: #fff;
-  padding: 3rem 0;
+  color: #C1E3E2;
+  padding: 3em 0;
   position: absolute;
   text-align: center;
   width: 100%; }
+
+@media (max-width: 1024px) {
+  #main #photos-nasa .photo-nasa {
+    margin-top: -5em; } }
+@media (max-width: 420px) {
+  #main h2 {
+    font-size: 1.5em; }
+  #main #mars-content .caption-photo-mars {
+    margin-top: 1em; } }

@@ -1,7 +1,7 @@
 var apiKey = 'HwoYeicxD7xs6igwFnRxASPVjqtwhOWf4VqcD1pO';
 // Arrancando
 nasaRequest("https://api.nasa.gov/planetary/apod?api_key=" + apiKey, "planetary");
-nasaRequest("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=" + apiKey, "marsRovers");
+nasaRequest("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=" + apiKey, "marsRovers");
 
 
 function pushToHTML(datos,container) {
@@ -13,7 +13,11 @@ function pushToHTML(datos,container) {
         document.getElementById('nasa-photo-description').innerHTML = datos.explanation;
     }
     if(container == 'marsRovers'){
-        document.getElementById('pp').innerHTML = datos.photos[0].earth_date;
+        document.getElementById('mars-photo').setAttribute("src", datos.photos[0].img_src);
+        document.getElementById('mars-photo').setAttribute("atl", datos.photos[0].full_name);
+        document.getElementById('rover-name').innerHTML = datos.photos[0].rover.name;
+        document.getElementById('earth-date').innerHTML = datos.photos[0].earth_date;
+        document.getElementById('landing-date').innerHTML = datos.photos[0].rover.landing_date;
     }
 
 }
@@ -24,13 +28,10 @@ function nasaRequest(url,container) {
     xmlHttp.onreadystatechange = function() {
         if (xmlHttp.readyState === 4) {
             if (xmlHttp.status >= 100 && xmlHttp.status <= 300) {
-                //document.getElementById("cargando").style.display = 'none';
                 var datos = JSON.parse(xmlHttp.responseText);
                 pushToHTML(datos,container);
             } else if (xmlHttp.status >= 400 && xmlHttp.status <= 600) {
                 // Estilos
-                document.getElementById("cargando").style.display = 'none';
-                document.getElementById("error-ajax").style.display = 'block';
                 document.getElementById("row-contenido").innerHTML = '<img src="http://www.404notfound.fr/assets/images/pages/img/androiddev101.jpg">';
                 console.error("ERROR! 404", JSON.parse(xmlHttp.responseText));
             }

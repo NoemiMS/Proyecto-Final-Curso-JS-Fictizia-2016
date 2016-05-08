@@ -1,26 +1,22 @@
 // Fonts
-
 @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway);
-
 $raleway: 'Raleway', sans-serif;
-$gloria: 'Gloria Hallelujah', cursive;
+$gloria: 'Gloria Hallelujah', cursive; //Colors
+$color-primary: #E2F4F4;
+$color-secundary: #9FB8B9;
+$color-tertiary: #7591A3;
+$color-quaternary: #C1E3E2;
 
-//Colors
-
-$dark-blue: #100828;
-$lighter-blue: #281D57;
-$lightest-blue: #38297A;
 $white: #fff;
-$spacial-grey: #F5E9FA;
 
 // Mixins
-
 @mixin display-flex {
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: center; /* Safari 6.1+ */
+    -webkit-justify-content: center;
+    /* Safari 6.1+ */
     justify-content: center;
 }
 
@@ -30,25 +26,21 @@ $spacial-grey: #F5E9FA;
     margin: 0;
     padding: 0;
 }
-
 html {
     height: 100%;
 }
-
 body {
     font-family: $raleway;
     font-size: 16px;
-    color: $spacial-grey;
-    background: url('../img/space-bg-2.jpg') repeat-y scroll 0 0 transparent;
-    background-size: cover;
+    color: $color-tertiary;
+    background: $white;
     min-height: 100%;
-    position:relative;
-
+    position: relative;
     a {
-        color: $white;
+        color: $color-quaternary;
         text-decoration: underline;
         &:hover {
-            color: $lightest-blue;
+            color: $color-tertiary;
         }
     }
     h1,
@@ -60,159 +52,114 @@ body {
         font-family: $gloria;
     }
 }
-
-
-
-/*Header*/
-
-.navbar-universe {
-    background-color: $dark-blue;
-    border-color: $dark-blue;
-    padding: 1.5rem 0;
-
-    .navbar-header {
-        @include display-flex;
-
-        .navbar-brand {
-            @include display-flex;
-
-            h1 {
-                color: $spacial-grey !important;
-                font-size: 1.6em;
-                margin: 0 0 0 1rem;
-            }
-        }
-    }
-
-    .navbar-nav {
-        float: right;
-        li {
-              >a {
-                    color: $white;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    text-decoration: none;
-
-                    &:hover,
-                    &:focus {
-                        background-color: transparent;
-                        text-decoration: underline;
-                    }
-              }
-        }
+header {
+    background-color: $color-secundary;
+    color: $color-quaternary;
+    padding: 1em;
+    text-align: center;
+    h1 {
+        margin: 0;
     }
 }
-
-
-/*Hambuger menu in all screen-sizes*/
-// @media (max-width: 2500px) {
-//   .custom-navbar .navbar-header {
-//     float: none;
-//   }
-//
-//   .custom-navbar .navbar-left,
-//   .custom-navbar .navbar-right {
-//     float: none !important;
-//   }
-//
-//   .custom-navbar {
-//       .navbar-toggle {
-//         display: block;
-//         margin: 0;
-//       }
-//
-//       &.navbar-fixed-top {
-//         top: 0;
-//         border-width: 0 0 1px;
-//       }
-//
-//       .navbar-collapse.collapse {
-//           display: none!important;
-//       }
-//
-//
-//
-//       .collapse.in {
-//         display: block !important;
-//         float: right;
-//         width: 100%;
-//       }
-//
-//       .custom-navbar .navbar-nav .open .dropdown-menu {
-//         position: static;
-//         float: none;
-//         width: auto;
-//         margin-top: 0;
-//         background-color: transparent;
-//         border: 0;
-//         -webkit-box-shadow: none;
-//         box-shadow: none;
-//       }
-//   }
-//
-// }
-
-
-
-
 #main {
-    padding-bottom: 200px;
-    .wrapper-main {
-        background-color: $dark-blue;
-        padding: 5rem;
-
-        #photos-nasa {
-            text-align:center;
-            h2 {
-                border-bottom: 8px double $white;
-                color:$white;
-                display: inline-block;
-            }
-
-            .photo-circle {
-                img {
-                    margin: 0 auto;
-                    max-height: 300px;
-                }
-            }
-        }
-
-        #things-around-earth {
-            margin-top: 6rem;
-
-            .row {
-                @include display-flex;
-            }
-        }
-
-        // Why Page
-
-        span {
-            font-style: italic;
-        }
-
+    .intro {
+        background: url('../img/background.png') repeat scroll 0 0 transparent;
+        -webkit-animation: animatedBackground 200s 0s linear infinite;
+        -moz-animation: animatedBackground 200s 0s linear infinite;
+        animation: animatedBackground 200s 0s linear infinite;
+        padding: 5em 0;
         .list-api {
-            padding-left: 3.5rem;
-        }
-        .social-network {
             li {
-                display: inline-block;
-                font-size: 5rem;
-                padding: 0 1rem;
+                list-style-position: inside;
             }
         }
     }
-
+    #photos-nasa {
+        background: url('../img/background.png') repeat scroll 0 0 transparent;
+        -webkit-animation: animatedBackground 200s 0s linear infinite;
+        -moz-animation: animatedBackground 200s 0s linear infinite;
+        animation: animatedBackground 200s 0s linear infinite;
+        padding: 5em;
+        text-align: left;
+        .info-photo-nasa {
+            background-color: $white;
+            padding: 3em;
+            z-index: 10;
+        }
+        .photo-nasa {
+            background-color:$white;
+            margin-top: -7em;
+            padding: .5em;
+            z-index: 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    #mars-content {
+        background: url('../img/bg-mars.png') repeat scroll 0 0 #000;
+        padding: 5em 5em 11em;
+        text-align: center;
+        .photo-wrapper {
+            position: relative;
+            img {
+                width: 100%;
+            }
+            .caption-photo-mars {
+                background-color: rgba($white, .9);
+                margin-top: -4em;
+                padding: 1.5em 2em;
+                text-align: right;
+            }
+        }
+    }
 }
 
-    // Footer
+//Keyframes
 
-    footer {
-        background-color: $dark-blue;
-        bottom: 0;
-        color: $white;
-        padding: 3rem 0;
-        position: absolute;
-        text-align: center;
-        width:100%;
+@keyframes animatedBackground {
+    from {
+		background-position: 5% 5%
+	}
+	to {
+		background-position: 1300% 600%
+	}
+}
+
+
+// Footer
+footer {
+    background-color: $color-secundary;
+    bottom: 0;
+    color: $color-quaternary;
+    padding: 3em 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+// Responsive
+@media (max-width: 1024px) {
+    #main {
+        #photos-nasa {
+            .photo-nasa {
+                margin-top: -5em;
+            }
+        }
     }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 420px) {
+    #main {
+        h2 {
+            font-size: 1.5em;
+        }
+        #mars-content {
+            .caption-photo-mars {
+                margin-top: 1em;
+            }
+        }
+    }
+}
