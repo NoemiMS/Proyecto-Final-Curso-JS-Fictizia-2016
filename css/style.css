@@ -60,6 +60,13 @@ header {
     z-index: 0; }
     #main #photos-nasa .photo-nasa img {
       width: 100%; }
+    #main #photos-nasa .photo-nasa .universe-photo.hidden {
+      display: none; }
+    #main #photos-nasa .photo-nasa .universe-video.hidden {
+      display: none; }
+  #main #photos-nasa iframe {
+    height: 500px;
+    width: 100%; }
 #main #mars-content {
   background: url("../img/bg-mars.png") repeat scroll 0 0 #000;
   padding: 5em 5em 11em;
@@ -96,3 +103,5 @@ footer {
     font-size: 1.5em; }
   #main #mars-content .caption-photo-mars {
     margin-top: 1em; } }
+
+/*# sourceMappingURL=style.css.map */
