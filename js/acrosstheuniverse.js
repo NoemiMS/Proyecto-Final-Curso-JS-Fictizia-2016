@@ -6,9 +6,17 @@ nasaRequest("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol
 
 function pushToHTML(datos,container) {
     // Actualizando el HTML
+    var photoNasa = document.getElementById('universe-photo');
+    var videoNasa = document.getElementById('universe-video');
     if(container == 'planetary'){
-        document.getElementById('universe-photo').setAttribute("src", datos.url);
-        document.getElementById('universe-photo').setAttribute("atl", datos.title);
+        if (datos.media_type == 'video') {
+            document.getElementById('universe-video').setAttribute("src", datos.url);
+            photoNasa.classList.add("hidden");
+        }else {
+            document.getElementById('universe-photo').setAttribute("src", datos.url);
+            document.getElementById('universe-photo').setAttribute("atl", datos.title);
+            videoNasa.classList.add("hidden");
+        }
         document.getElementById('nasa-photo-title').innerHTML = datos.title;
         document.getElementById('nasa-photo-description').innerHTML = datos.explanation;
     }
