@@ -94,6 +94,25 @@ header {
             img {
                 width: 100%;
             }
+            .universe-photo {
+                &.hidden {
+                    display:none;
+                }
+            }
+
+            .universe-video {
+                &.hidden {
+                    display:none;
+                }
+            }
+
+        }
+
+
+
+        iframe {
+            height: 500px;
+            width: 100%;
         }
     }
     #mars-content {
