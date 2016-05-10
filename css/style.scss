@@ -51,11 +51,15 @@ body {
     h6 {
         font-family: $gloria;
     }
+
+    .row{
+        margin: 0 !important;
+    }
 }
 header {
     background-color: $color-secundary;
     color: $color-quaternary;
-    padding: 1em;
+    padding: 1em 0;
     text-align: center;
     h1 {
         margin: 0;
@@ -120,6 +124,8 @@ header {
         padding: 5em 5em 11em;
         text-align: center;
         .photo-wrapper {
+            background:none repeat scroll 0 0 $white;
+            padding: .5em;
             position: relative;
             img {
                 width: 100%;
