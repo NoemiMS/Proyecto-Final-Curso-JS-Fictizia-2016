@@ -1,8 +1,10 @@
-# Bienvenidos a mi Universo JS
+# Wellcome to Across the Universe
 ==============================
 
 ![MegaSuperNova](https://pixabay.com/static/uploads/photo/2011/12/14/12/11/horsehead-nebula-11081_960_720.jpg)
 
-Del 27 de enero al 16 de marzo de 2016 fui a clase todos los lunes y miércoles de 19 a 22 para adentrarme en el maravilloso mundo del JavaScript.
+From 27th January 2016 until 16th March 2016, I spent my life in a classroom, every Monday and Wednesday from 7 p.m. to 9 p.m., in my purpose to learn all about JavaScript.
 
-Después de muchas horas de sueño perdidas (soy de naturaleza "gallinácea") y algunas [sobredosis de iocaína](https://youtu.be/KxKnTzBimig?t=52m35s "Teresa de la Torre en Women Techmakers"), este es mi proyecto final del curso. 
+Few months later, I try to use what I learned in that clasrrom to do this. I have used NASA APIs because *"We are stardust"*. 
+
+Probably my code could be better, but it is my first "project" in JavaScript so... Go easy, my friend!
