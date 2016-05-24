@@ -1,5 +1,4 @@
 # Wellcome to Across the Universe
-==============================
 
 From 27th January 2016 until 16th March 2016, I spent my life in a classroom, every Monday and Wednesday from 7 p.m. to 9 p.m., in my purpose to learn all about JavaScript.
 
