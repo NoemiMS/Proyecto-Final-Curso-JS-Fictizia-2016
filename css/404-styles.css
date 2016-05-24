@@ -12,7 +12,8 @@ body {
   color: #7591A3;
   background: #fff;
   min-height: 100%;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   body a {
     color: #C1E3E2;
     text-decoration: underline; }
@@ -53,3 +54,5 @@ body {
   body .text-wrapper {
     margin: 1% auto;
     text-align: center; }
+
+/*# sourceMappingURL=404-styles.css.map */
