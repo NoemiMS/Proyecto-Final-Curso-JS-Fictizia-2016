@@ -6,6 +6,8 @@ Few months later, I try to use what I learned in that clasrrom to do this. I hav
 
 Probably my code could be better, but it is my first "project" in JavaScript so... Go easy, my friend!
 
+[Demo](http://noemimedina.com/projects/AcrossTheUniverse "Across the Universe")
+
 ![MegaSuperNova](https://pixabay.com/static/uploads/photo/2011/12/14/12/11/horsehead-nebula-11081_960_720.jpg)
 
 
