@@ -1,0 +1,13 @@
+@import 'global';
+
+body {
+    background: url('../img/404bg.jpg')no-repeat center center #0f1c24;
+    background-size: cover;
+    min-height: 100%;
+    position: relative;
+
+    .text-wrapper {
+        margin: 1% auto;
+        text-align: center;
+    }
+}

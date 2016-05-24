@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway);
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #7591A3;
+  background: #fff;
+  min-height: 100%;
+  position: relative; }
+  body a {
+    color: #C1E3E2;
+    text-decoration: underline; }
+    body a:hover {
+      color: #7591A3; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    font-family: "Gloria Hallelujah", cursive; }
+  body .row {
+    margin: 0 !important; }
+
+header {
+  background-color: #9FB8B9;
+  color: #C1E3E2;
+  padding: 1em 0;
+  text-align: center; }
+  header h1 {
+    margin: 0; }
+
+footer {
+  background-color: #9FB8B9;
+  bottom: 0;
+  color: #C1E3E2;
+  padding: 3em 0;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+
+body {
+  background: url("../img/404bg.jpg") no-repeat center center #0f1c24;
+  background-size: cover;
+  min-height: 100%;
+  position: relative; }
+  body .text-wrapper {
+    margin: 1% auto;
+    text-align: center; }

@@ -36,6 +36,15 @@ header {
   header h1 {
     margin: 0; }
 
+footer {
+  background-color: #9FB8B9;
+  bottom: 0;
+  color: #C1E3E2;
+  padding: 3em 0;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+
 #main .intro {
   background: url("../img/background.png") repeat scroll 0 0 transparent;
   -webkit-animation: animatedBackground 200s 0s linear infinite;
@@ -90,15 +99,6 @@ header {
     background-position: 5% 5%; }
   to {
     background-position: 1300% 600%; } }
-footer {
-  background-color: #9FB8B9;
-  bottom: 0;
-  color: #C1E3E2;
-  padding: 3em 0;
-  position: absolute;
-  text-align: center;
-  width: 100%; }
-
 @media (max-width: 1024px) {
   #main #photos-nasa .photo-nasa {
     margin-top: -5em; } }

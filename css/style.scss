@@ -1,70 +1,6 @@
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway);
-$raleway: 'Raleway', sans-serif;
-$gloria: 'Gloria Hallelujah', cursive; //Colors
-$color-primary: #E2F4F4;
-$color-secundary: #9FB8B9;
-$color-tertiary: #7591A3;
-$color-quaternary: #C1E3E2;
-
-$white: #fff;
-
-// Mixins
-@mixin display-flex {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    /* Safari 6.1+ */
-    justify-content: center;
-}
+@import 'global';
 
 
-// General Styles
-* {
-    margin: 0;
-    padding: 0;
-}
-html {
-    height: 100%;
-}
-body {
-    font-family: $raleway;
-    font-size: 16px;
-    color: $color-tertiary;
-    background: $white;
-    min-height: 100%;
-    position: relative;
-    a {
-        color: $color-quaternary;
-        text-decoration: underline;
-        &:hover {
-            color: $color-tertiary;
-        }
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: $gloria;
-    }
-
-    .row{
-        margin: 0 !important;
-    }
-}
-header {
-    background-color: $color-secundary;
-    color: $color-quaternary;
-    padding: 1em 0;
-    text-align: center;
-    h1 {
-        margin: 0;
-    }
-}
 #main {
     .intro {
         background: url('../img/background.png') repeat scroll 0 0 transparent;
@@ -140,6 +76,8 @@ header {
     }
 }
 
+
+
 //Keyframes
 
 @keyframes animatedBackground {
@@ -152,16 +90,7 @@ header {
 }
 
 
-// Footer
-footer {
-    background-color: $color-secundary;
-    bottom: 0;
-    color: $color-quaternary;
-    padding: 3em 0;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
+
 
 // Responsive
 @media (max-width: 1024px) {
